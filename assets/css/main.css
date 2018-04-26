@@ -1,13 +1,23 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 .container {
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .heading {
-
+  color: #454489;
+  font: 1.875rem/3.5rem 'Roboto', sans-serif;
+  padding: 0 0.9375rem;
+  text-align: center;
 }
