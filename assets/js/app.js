@@ -404,3 +404,27 @@ const names = [
     ['Silvestrs','Silvis','Kalvis']
   ]
 ];
+
+const el = document.querySelector('.heading');
+
+const date = new Date(), 
+mon = date.getMonth(), 
+day = date.getDate()-1;
+
+function getNames() {
+
+  let output;
+  const arr = names[mon][day];
+
+  if (arr.length === 1) {
+    output = arr;
+  } else if (arr.length === 2) {
+    output = arr.join(' un ');
+  } else {
+    output = `${arr.slice(0, -1).join(', ')} un ${arr.slice(-1)}`; 
+  }
+
+  return `Vārda dienu svin ${output}.`;
+}
+
+el.textContent = getNames();
