@@ -4,20 +4,15 @@
   padding: 0;
 }
 
-html,
-body,
-.container {
+html, body {
   height: 100%;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-}
-
-.container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .heading {
